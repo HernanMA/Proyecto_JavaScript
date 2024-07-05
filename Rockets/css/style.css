@@ -1,0 +1,324 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #0005D9;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' %3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(107,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23000000'/%3E%3Cstop offset='1' stop-color='%231C1B51'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpattern id='b' width='90' height='90' patternUnits='userSpaceOnUse'%3E%3Ccircle fill='%230005D9' cx='45' cy='45' r='45'/%3E%3C/pattern%3E%3Crect width='100%25' height='100%25' fill='url(%23a)'/%3E%3Crect width='100%25' height='100%25' fill='url(%23b)' fill-opacity='0'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    place-items: center;
+    margin-right: 4rem;
+    margin-top: -10rem;
+}
+
+.wrapper > div {
+    color: white;
+    padding: 1rem;
+}
+
+img {
+    filter: drop-shadow(0 0 1rem rgb(255, 255, 255));
+    width: 50%;
+    height: auto;
+    overflow: scroll;
+}
+
+.item6 {
+    grid-area: 1 / 1 / span 3 / span 2;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    overflow: scroll;
+    margin-bottom: 49rem;
+}
+
+.item1 {
+    margin-bottom: 29.3rem;
+}
+
+.item2 {
+    font-size: 2rem;
+    grid-area: 2 / 3 / span 1 / span 2;
+}
+
+.item3 {
+    margin-bottom: 29rem;
+}
+
+.item7 {
+    font-size: 1.2rem;
+    grid-area: 3 / 1 / span 1 / span 1;
+    margin-bottom: 20rem;
+}
+
+.item4 {
+    grid-area: 1 / 5 / span 3 / span 1 ;
+    margin-bottom: 15rem;
+}
+
+.item5 {
+    font-size: 1.2rem;
+    grid-area: 3 / 2 / span 1 / span 1;
+    margin-bottom: 15rem;
+}
+
+.item9 {
+    grid-area: 1 / 2 / span 1 / span 3;
+    font-size: 3rem;
+    text-align: center;
+    margin-left: 13rem;
+    margin-top: 8rem;
+}
+
+.item8 {
+    grid-area: 1 / 4;
+    margin-left: 13rem;
+    margin-top: 8rem;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2rem;
+    grid-area: 4 / 3 / span 1 / span 3  ;
+    margin-left: 7rem;
+    padding-bottom: -44rem;
+    margin-top: 2rem;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1.3rem;
+    padding: 0.8rem 1.3rem 0.8rem 0.9rem;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    border: none;
+    letter-spacing: 0.05em;
+    border-radius: 16px;
+}
+
+button svg {
+    margin-right: 3px;
+    transform: rotate(30deg);
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+button span {
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+button:hover svg {
+    transform: translateX(5px) rotate(90deg);
+}
+
+button:hover span {
+    transform: translateX(7px);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#horizontal {
+    display: flex;
+    margin: 2rem;
+    width: fit-content;
+    position: relative;
+    left: 30em;
+    align-items: center;
+}
+
+.horizontal {
+    padding-right: 10rem;
+    padding-left: 10.5rem;
+}
+
+#barra {
+    position: relative;
+    background-color: white;
+    width: 20rem;
+    height: 4rem;
+    border-radius: 2rem;
+    margin: 1rem;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-evenly;
+    background-color: #181145;
+    border: 1px solid #ada8cd;
+    align-items: center;
+    margin-left: 14rem;
+}
+
+#icon {
+    width: 2rem;
+    border: .2rem transparent solid;
+    background-color: transparent;
+}
+
+#icon:hover {
+    width: 3em;
+    padding: 8px;
+    border-bottom: 4px rgb(139, 237, 230) solid;
+
+}
+
+.loader {
+    background: linear-gradient(127deg, #ffffff0f 30%, #ffffff3b 38%, #f0f0f0b3 40%, #e5e5e51c 40%);
+    background-size: 261% 114%;
+    background-position: 100% 0;
+    animation: load 2s;
+    width: 100%;
+    margin: 12px 0;
+    color: whitesmoke;
+}
+@keyframes load {
+    0% {
+        color: transparent;
+    }
+
+    80% {
+        color: transparent;
+    }
+
+    100% {
+        color: transparent;
+        background-position: -100% 0;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+*,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    * {
+        margin: 0;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: space-between;
+        text-align: center;
+        margin-right: 0;
+        overflow: auto;
+        flex-wrap: nowrap;
+        align-content: stretch;
+        margin-top: -5em;
+        width: 27em;
+    }
+
+    .wrapper > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0rem;
+        margin-bottom: 1em;
+    }
+    .item8{
+        margin-top: 0;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .loader {
+        background-size: 260% 114%;
+    }
+
+    #horizontal {
+        display: flex;
+        margin: 0;
+        left: -6.3em;
+        flex-direction: column;
+    }
+    
+    #barra {
+        position: relative;
+        display: inline-block;
+        width: 6em;
+        height: 5em;
+        top: 3em;
+        left: 5em;
+        background-image: url(https://cdn-icons-png.flaticon.com/512/159/159841.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 1em;
+    }
+    #barraContenido {
+        display: none;
+        position: absolute;
+        width: 6em;
+        height: 18em;
+        left: 0em;
+        bottom: 0;
+        top: 5em;
+        background-color: #4230b8;
+        border: 3px solid #5f50bf;
+        padding: 20px 17px;
+        z-index: 1;
+        flex-direction: column;
+        border-radius: 1em;
+    }
+    #barra:hover #barraContenido{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+    #icon{
+        width: 3em;
+    }
+    #botones {
+        display: flex;
+        width: 20em;
+        justify-content: space-between;
+    }
+    button {
+        padding: 1rem 0.2rem;
+        position: relative;
+        width: 6em;
+        margin: 0em;
+        left: 1.5em;
+    }
+
+}
+
+.country {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+column-gap: 1rem;
+margin-top: .6rem;
+row-gap: 3rem;
+}
+
+.country h1 {
+    grid-area: 1 / 1 / span 0 / span 0 ;
+    column-gap: 4rem;
+}
+
+.horizontal {
+    margin-bottom: 32rem;
+}
